@@ -1,0 +1,130 @@
+.enjpop{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.gem-card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+ 
+  /* Center align children horizontally */
+  width: 450px;
+  /* Set a fixed width */
+}
+
+.gem-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gem-location {
+  font-size: xx-large;
+  color: #333;
+  margin: 15px 0;
+}
+
+.gem-image {
+  width: 400px;
+  /* Set a fixed width */
+  height: 300px;
+  /* Set a fixed height */
+  object-fit: cover;
+  /* Cover the frame without distorting the image */
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.gem-description {
+  font-size: 16px;
+  color: #666;
+  margin: auto;
+}
+
+
+
+.gem-card .hyper-link {
+  display: block;
+  margin: 20px auto;
+  border-color: #17a2b8;
+  /* Bootstrap 'outline-info' color */
+}
+
+/* Additional button hover effects if needed */
+.gem-card .hyper-link:hover {
+  background-color: #17a2b8;
+  /* Bootstrap 'info' color */
+  color: #fff;
+}
+
+/* General button styles */
+.rating-bar-icon-container {
+  display: flex;
+  flex-direction: column;
+}
+.buttons {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 110px;
+  
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  width: 30%;
+}
+
+.icon-button:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.icon {
+  width: 30%;
+}
+
+/* Edit button specific styles */
+.edit-button {
+  margin-right: 10px;
+  /* Adds some space between edit and delete buttons */
+  color: #4CAF50;
+  /* Green color for an intuitive edit action */
+}
+
+.edit-button:hover {
+  background-color: #d5f5e3;
+  /* Lighter green on hover */
+}
+
+/* Delete button specific styles */
+.delete-button {
+  color: #F44336;
+  /* Red color for an intuitive delete action */
+}
+
+.delete-button:hover {
+  background-color: #fddede;
+  /* Lighter red on hover */
+}
+
+.rating-bar-button-container {
+  bottom: 10px;
+  /* Fixed 10px from the bottom of its parent container */
+  margin: auto;
+  /* Centers the container if it has a specified width */
+  /* Ensure the container has a specified width if you want it centered */
+}

@@ -1,0 +1,252 @@
+.profile-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image-section {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-image {
+  width: 100%;
+  height: 25em;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.header-image:hover {
+  filter: brightness(70%); /* Makes the image darker on hover */
+}
+.gem-cards {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: auto
+}
+.gems-section {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: filter 0.3s ease; /* Smooth transition for the filter */
+}
+
+.profile-image:hover {
+  filter: brightness(70%); /* Makes the image darker on hover */
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -25px;
+}
+
+.header-upload-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.user-name,
+.user-email {
+  text-align: center;
+}
+
+.user-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  font-family:  "Bebas Neue", sans-serif;
+
+}
+
+.user-email {
+  font-size: 16px;
+  color: #666;
+}
+
+
+
+
+
+.comment {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.upload-status {
+  margin-top: 10px;
+  font-style: italic;
+}
+.color-picker-section {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  align-items: center; /* Centers the button vertically */
+  padding: 10px;
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid #d9d9d9; /* Solid border, 10px wide, light gray color */
+  margin-bottom: 20px;
+}
+
+.color-picker-title {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.color-picker {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.color-input {
+  margin-right: 10px;
+}
+
+.edit-colors-icon {
+  margin: auto;
+  width: 40px;
+  margin-bottom: 10px;
+  border: 10px;
+  transition: background-color 1s, transform 1s; /* Smooth transitions for feedback */
+  cursor: pointer;
+}
+.color-picker-container {
+  margin: auto;
+  justify-content: center;
+}
+.edit-colors-icon:hover {
+  transform: scale(1.4); /* Slightly scale down to mimic a press */
+}
+.edit-icon-container {
+  display: flex;
+  align-items: center;
+}
+.save-btn-container {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  align-items: center; /* Centers the button vertically */
+  height: 100%; /* Adjust the height as needed, or use a specific value */
+}
+
+.save-colors-btn {
+  width: 100px;
+  background-color: #0dcaf0;
+  color: white; /* White text for contrast */
+  padding: 10px 20px; /* Adequate padding for clickability */
+  font-size: 16px; /* Readable text size */
+  border: none; /* No border for a modern look */
+  border-radius: 5px; /* Slightly rounded corners */
+  cursor: pointer; /* Cursor indicates button is clickable */
+  transition: background-color 1s, transform 1s; /* Smooth transitions for feedback */
+  outline: none; /* Remove outline to keep the design clean */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.save-colors-btn:hover {
+  background-color: #070707;
+  transform: scale(1.08); /* Slightly scale down to mimic a press */
+}
+/* Color Pickers Container */
+.color-pickers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px; /* Space between color picker inputs */
+  margin: 20px auto; /* Centering the container */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1000px; /* Maximum width of the container */
+  width: 100%;
+}
+
+/* General Style for Picker Component */
+.picker {
+  transition: background-color 1s, transform 1s; /* Smooth transitions for feedback */
+}
+
+/* Hover State for the Picker */
+.picker:hover {
+  background-color: #f5f5f5; /* Slightly darker background on hover */
+  border-color: #b3b3b3; /* Darker border to highlight */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  transform: scale(1.2);
+  cursor: pointer; /* Indicates the element is interactive */
+}
+
+/* Basic Style for Friend Button */
+.friend-button-container {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  align-items: center; /* Centers the button vertically */
+}
+.friend-button {
+  width: 100px;
+
+  background-color: #0dcaf0;
+  color: white; /* White text for contrast */
+  padding: 10px 20px; /* Adequate padding for clickability */
+  font-size: 16px; /* Readable text size */
+  border: none; /* No border for a modern look */
+  border-radius: 5px; /* Slightly rounded corners */
+  cursor: pointer; /* Cursor indicates button is clickable */
+  transition: background-color 1s, transform 1s; /* Smooth transitions for feedback */
+  outline: none; /* Remove outline to keep the design clean */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  margin-top: 100px;
+}
+
+/* Hover State */
+.friend-button:hover {
+  background-color: #010101; /* Darker shade of green on hover */
+  transform: scale(1.08); /* Slightly scale down to mimic a press */
+}
+
+.GemsYouCreated {
+  text-align: center;
+  font-family:  "Bebas Neue", sans-serif;
+  font-size: 48px;
+
+}
+
+@media (max-width: 768px) {
+  .friend-email {
+    max-width: 60%; /* or whatever works best for your layout */
+  }
+  
+  /* Adjust button size if necessary */
+  .unfollow-button {
+    padding: 5px 10px; /* Smaller padding */
+    font-size: 0.8rem; /* Smaller font size */
+  }
+}

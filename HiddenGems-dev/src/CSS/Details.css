@@ -1,0 +1,385 @@
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  gap: 20px;
+  width: 100%;
+  justify-content: end; /* Aligns the grid items to the right */
+}
+.gem-details-ratings-map {
+  display: flex;
+  flex-direction: row; /* Align children horizontally */
+  justify-content: space-between; /* Space out the children evenly */
+  align-items: center; /* Center the items vertically */
+  gap: 20px; /* Add some space between the children */
+}
+
+.gem-details-container
+ {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+}
+/* Container for the Gem Image and Description */
+.img-description-container .gem-details-image {
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  max-width: 70%; /* Limits the image width to 50% of its container's width */
+  max-height: 300px; /* Sets a maximum height for the image */
+  object-fit: cover; /* Ensures the image covers the set dimensions without distorting its aspect ratio */
+  display: block; /* Displays the image as a block element */
+  margin: 0 auto; /* Centers the image horizontally within its container */
+}
+
+/* Optional: Add a subtle hover effect for the entire container */
+.gem-img-description-container:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly enhanced shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect for interactivity */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for the hover effects */
+}
+
+.gem-img-description-container {
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.gem-details-image:hover {
+  transform: scale(
+    1.05
+  ); /* Slightly enlarge on hover for interaction feedback */
+}
+.img-description-tags-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  border-right: 1px solid #000000;
+}
+/* Container for Tags */
+.img-description-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px; /* Space between tags */
+  justify-content: center;
+}
+
+/* Style for each Tag */
+.img-description-tags span {
+  background-color: #e9f5ff; /* Light blue background */
+  color: #007bff; /* Dark blue text */
+  padding: 5px 10px; /* Padding inside the tag */
+  border-radius: 20px; /* Rounded corners for pill-like shape */
+  font-size: 14px; /* Text size */
+  white-space: nowrap; /* Prevents the text from wrapping */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+ 
+}
+
+/* Hover Effect for Tags */
+.img-description-tags span:hover {
+  background-color: #007bff; /* Darker background on hover */
+  color: #ffffff; /* White text on hover */
+  cursor: pointer; /* Indicates the tag is interactive */
+}
+
+/* Style for the Gem Description */
+.gem-details-description {
+  background-color: #ffffff; /* Light grey background for contrast */
+  color: #333; /* Darker text for readability */
+  padding: 15px; /* More padding for emphasis on the description */
+  border-radius: 10px; /* Slightly rounded corners for a soft appearance */
+  font-size: 16px; /* Suitable font size for readability */
+  line-height: 1.5; /* Increase line-height for better readability */
+  font-weight: bold; /* Makes the text bold */
+}
+
+/* Optional: Add a hover effect similar to the tags */
+.gem-details-description:hover {
+  background-color: #eaeaea; /* Slightly darker on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for emphasis */
+  cursor: default; /* Indicates the description is not interactive like the tags */
+}
+
+.gem-details-location,
+.comments-section h6 {
+  color: #333;
+  text-align: center;
+}
+
+.gem-details-ratings-map {
+  display: flex;
+  flex-direction: row; /* Aligns children (ratings and map) horizontally */
+  justify-content: space-between; /* Spaces out the children evenly */
+  align-items: center; /* Centers the items vertically if they have different heights */
+  gap: 20px; /* Adjusts gap between the ratings and the map */
+}
+
+.gem-details-ratings {
+  /* Ensure it takes only the necessary space and aligns its children (the rating bars) in columns */
+  display: flex;
+  flex-direction: column; /* Aligns the rating bars vertically */
+}
+
+.details-flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Adjust as needed */
+}
+
+.rating-bar-container {
+  display: flex;
+  width: 100%; /* Make sure the container takes the full width */
+}
+
+.rating-bar {
+  display: flex; /* This makes each rating bar also a flex container */
+  justify-content: center; /* Centers the content of each rating bar */
+  flex: 1; /* This ensures each rating bar takes equal space */
+  align-items: center; /* Aligns items vertically in the center */
+  text-align: center; /* Ensures text within is centered, useful for the paragraph */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* If your RatingBar component's size needs adjustment: */
+.rating-bar svg {
+  height: 18px; /* Adjusts the size of SVG elements, if applicable */
+  width: auto; /* Keeps aspect ratio intact */
+}
+
+.gem-details-map {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; /* Adjust to make the map fill its container */
+  height: 200px; /* Example height */
+  border-radius: 8px;
+}
+
+
+.img-description-container .gem-details-description {
+  text-align: center;
+  color: #333;
+  font-size: 16px; /* Adjust based on your preference */
+  margin-bottom: 10px; /* Space at the bottom */
+}
+
+.img-description-container .tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Space between tags */
+}
+
+.img-description-container .tag-container span {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 20px; /* Rounded pill shape */
+  font-size: 14px;
+}
+.comments-container {
+  width: 100%;
+  height: 600px;
+}
+.comment-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Style for Text Box Container */
+.text-box-container {
+  background-color: #ffffff; /* A light background to highlight the text area */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  width: 90%; /* Use a responsive width */
+  max-width: 600px; /* Maximum width to maintain readability */
+}
+
+/* Optional: Add interactivity */
+.text-box-container:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover for depth */
+  transform: translateY(
+    -2px
+  ); /* Slightly lift the container for interaction feedback */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions for the hover effects */
+}
+
+/* Style for the text content */
+.text-box-container p {
+  color: #ffffff; /* Dark color for readability */
+  line-height: 1.6; /* Spacing between lines for readability */
+  margin: 0 0 10px 0; /* Space below paragraphs */
+}
+
+.comment-user-id p,
+.comment-entry p {
+  color: #000000; /* Soft, dark color for readability */
+  background-color: #ffffff; /* Light background to offset the text */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for interactive feedback */
+}
+
+.comment-entry p:hover {
+  background-color: #e2e6ea; /* Slightly darker background on hover for interaction feedback */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth on hover */
+}
+
+.trash-icon-button {
+  color: #dc3545; /* Bootstrap 'danger' color to indicate a delete action */
+  cursor: pointer;
+  background-color: transparent; /* Ensure the button has no background */
+  border: none; /* Remove any border */
+  padding: 5px; /* Add some padding for easier clickability */
+  border-radius: 50%; /* Circular shape to encapsulate the icon */
+  display: inline-flex; /* Flex display to center the icon inside */
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, color 0.2s ease; /* Smooth transition for interaction */
+}
+
+.trash-icon-button:hover,
+.trash-icon-button:focus {
+  color: #a71d2a; /* Darker shade of the 'danger' color for hover/focus state */
+  transform: scale(
+    1.1
+  ); /* Slightly enlarge the button to indicate interactiveness */
+  background-color: #f8d7da; /* Light background color on hover/focus for better visibility */
+}
+
+.gem-details-comment-form {
+  margin-top: 20px;
+}
+
+.comment-textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.comment-submit-btn {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comment-submit-btn:hover {
+  background-color: #0056b3;
+}
+.comments-section {
+  overflow: scroll;
+  height: 60%;
+}
+
+.comments {
+  margin-top: 50px;
+  height: 700px
+}
+
+.title {
+  margin: auto;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+
+
+  .img-description-tags-container {
+    border-right: none; /* Removes the bar on the right in mobile view */
+  }
+  .details-container {
+    padding: 10px; /* Reduced padding for smaller screens */
+  }
+
+  .details-grid {
+    display: block; /* Stack the grid items vertically on smaller screens */
+  }
+
+  .gem-details-container, .comments-container {
+    width: 100%; /* Full width for better utilization of space */
+    /* margin-bottom: 20px; Add space between vertically stacked elements */
+  }
+
+  .gem-details-ratings-map, .gem-details-ratings, .rating-bar-container {
+    flex-direction: column; /* Stack flex children vertically */
+    align-items: center; /* Center-align the flex items for better appearance */
+    gap: 10px; /* Reduce gap for a compact layout */
+  }
+
+  .gem-details-image {
+    max-width: 100%; /* Allow the image to fill the container */
+    height: auto; /* Adjust height automatically */
+  }
+
+  .img-description-tags-container, .gem-img-description-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align elements for coherence */
+  }
+
+  .rating-bar {
+    justify-content: center; /* Center content for a balanced look */
+    flex-direction: column; /* Align rating items horizontally */
+    gap: 5px; /* Reduce gap to fit smaller screens */
+  }
+
+  .comment-container, .text-box-container {
+    flex-direction: column; /* Adjust comment layout to stack information */
+    align-items: stretch; /* Stretch items to fill the width */
+  }
+  
+  .text-btn-container {
+    display: flex;
+    justify-content: space-between; /* Adjust layout for delete button and text */
+    align-items: center;
+  }
+
+  /* Adjustments to form and buttons for better usability on mobile */
+  .comment-textarea, .comment-submit-btn {
+    width: 100%; /* Full width for text area and button */
+  }
+
+  
+
+}
+
+/* Enhancements for Hover Effects - applicable for devices that support hover */
+@media (hover: hover) {
+  .img-description-tags span:hover, .gem-details-description:hover {
+    transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover effects */
+  }
+
+  .trash-icon-button:hover {
+    transform: scale(1.1); /* Slight scale effect for interactive feedback */
+  }
+
+
+}

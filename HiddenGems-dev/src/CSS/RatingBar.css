@@ -1,0 +1,46 @@
+/* RatingBar.css */
+.rating-container {
+    display: flex;
+    justify-content: center; /* Center the gems in their container */
+    align-items: center; /* Align items vertically */
+    padding: 10px; /* Add some padding around the container */
+}
+
+.gem-icon {
+    width: 32px; /* Make the gems larger for better visibility */
+    height: 32px;
+    margin: 0 5px; /* Add space between gems */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    
+}
+
+.gem-icon:hover {
+    transform: scale(1.5); /* Slightly enlarge gems on hover */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+.fire-icon {
+    width: 38px; /* Make the gems larger for better visibility */
+    height: 38px;
+    margin: 0 2px; /* Add space between gems */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    
+}
+
+.fire-icon:hover {
+    transform: scale(1.5); /* Slightly enlarge gems on hover */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+/* Additional styles for filled gems */
+
+.gem-icon stop:first-child {
+    stop-color: #0dcaf0; /* Set the color for the filled portion */
+  }
+  .gem-icon stop:last-child {
+    stop-color: rgb(132, 131, 131); /* Set the color for the unfilled portion */
+  }
+  
+.hoverRating:hover {
+    opacity: 1;
+}

@@ -1,0 +1,36 @@
+.top-gems-container {
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+  }
+  
+  .top-gems-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: larger;
+  }
+  
+ 
+  
+
+  .gem-location {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .gem-description {
+    font-size: 16px;
+    color: #666;
+  }
+  .hyper-link {
+    cursor: pointer;
+    /* Additional styling for the link can go here */
+    text-decoration: none; /* Example: Removes underline from links */
+    color: #007bff; /* Example: Sets default link color */
+  }
+  
+  .hyper-link:hover {
+    text-decoration: underline; /* Example: Adds underline on hover */
+    color: #0056b3; /* Example: Changes color on hover */
+  }
+  

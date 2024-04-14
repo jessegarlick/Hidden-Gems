@@ -1,0 +1,116 @@
+.friends-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.friend-image {
+  width: 160px;
+  height: 160px;
+}
+.friend-info {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+}
+.name {
+  color: #333; /* Dark grey for high contrast and readability */
+  font-size: 18px; /* Sizeable font for clarity */
+  font-weight: 500; /* Medium weight for emphasis without being too bold */
+  margin: 10px 0; /* Space above and below for separation */
+  padding: 5px 0; /* Padding for visual comfort */
+  display: inline-block; /* Allows for additional styling such as padding */
+  border-bottom: 2px solid #0dcaf0; /* Underline effect with a vibrant color for a subtle highlight */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  align-items: center;
+  margin-right: 60px;
+}
+
+.name:hover {
+  color: #0dcaf0; /* Changes color on hover for interactive feedback */
+  cursor: pointer; /* Indicates the name is clickable, if it leads to a profile or action */
+  border-bottom-color: transparent; /* Removes underline on hover for a clean hover transition */
+}
+
+.center {
+  text-align: center;
+  width: 100%;
+}
+
+/* Maintain search button styles as specified */
+.search-button {
+  background-color: #0dcaf0;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 1s, transform 1s;
+  margin-top: 20px; /* Adjusted for consistency */
+}
+
+.search-button:hover {
+  background-color: #010101; /* No change per your request */
+  transform: scale(1.08); /* No change per your request */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px; /* Added for spacing */
+}
+
+.user-display, .friend-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.user-display:hover, .friend-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Combining repeated styles */
+.current-friends, .add-friends {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.email-label, .friend-info, .friend-name {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+/* Adjust responsiveness */
+@media (max-width: 768px) {
+  .friends-container {
+    flex-direction: column;
+  }
+
+  .current-friends, .add-friends {
+    width: 100%;
+    margin: 0; /* Reset margin for stacked layout */
+  }
+
+  .search-bar {
+    flex-direction: column;
+    margin-top: 0; /* Reset margin for consistency */
+  }
+}
